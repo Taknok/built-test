@@ -1,7 +1,7 @@
 diff --git a/src/protobuf/cmake/CMakeLists.txt b/src/protobuf/cmake/CMakeLists.txt
 index 04cb330..95882a2 100644
---- a/src/protobuf/cmake/CMakeLists.txt
-+++ b/src/protobuf/cmake/CMakeLists.txt
+--- a/src/protobuf/CMakeLists.txt
++++ b/src/protobuf/CMakeLists.txt
 @@ -298,7 +298,8 @@ endif (MSVC)
  include_directories(
    ${ZLIB_INCLUDE_DIRECTORIES}
