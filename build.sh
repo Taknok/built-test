@@ -35,7 +35,7 @@ fi
 
 architecture="$1"
 
-if [[ ! " ${ALLOWED[@]} " =~ "architecture" ]]; then
+if [[ ! " ${ALLOWED[@]} " =~ " $architecture " ]]; then
     echo "Error: '$architecture' is not in the allowed archs"
     help
     exit 1

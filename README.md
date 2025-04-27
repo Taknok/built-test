@@ -27,7 +27,7 @@ popd
 ## Build the binary
 Supported arch are 'x86_64', 'x86', 'arm64-v8a' & 'armeabi-v7a'
 ```bash
-bash ./build.sh arm64-v8a  # output in build/$arch/bin/aapt-*
+ANDROID_NDK="$HOME/Android/Sdk/ndk/" PROTOC_PATH="$PWD/src/protobuf/build/protoc" bash ./build.sh arm64-v8a  # output in build/$arch/bin/aapt-*
 ```
 
 # Resources
