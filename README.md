@@ -10,6 +10,11 @@ This repository contains a workflow to build the aapt2 binaries for Android.
 git submodule update --init --recursive --depth 1
 ```
 
+## Apply patch
+```bash
+bash ./patch.sh
+```
+
 ## Build protoc
 ```bash
 mkdir -p src/protobuf/build
@@ -22,7 +27,7 @@ popd
 ## Build the binary
 Supported arch are 'x86_64', 'x86', 'arm64-v8a' & 'armeabi-v7a'
 ```bash
-bash ./build.py arm64-v8a  # output in build/$arch/bin/aapt-*
+bash ./build.sh arm64-v8a  # output in build/$arch/bin/aapt-*
 ```
 
 # Resources
