@@ -62,3 +62,7 @@
 	shallow = true
 	path = src/jsoncpp
 	url = https://android.googlesource.com/platform/external/jsoncpp
+[submodule "src/googletest"]
+	shallow = true
+	path = src/googletest
+	url = https://android.googlesource.com/platform/external/googletest
