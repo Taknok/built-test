@@ -22,3 +22,5 @@ sed -i "$googletestPattern" "src/abseil-cpp/CMakeLists.txt"
 # Apply modification made by IBotPeaches for apktool
 git apply "patches/apktool_ibotpeaches.patch"
 git apply "patches/protobuf_android.patch"
+
+ln -sf "src/googletest" "src/boringssl/src/third_party/googletest"
