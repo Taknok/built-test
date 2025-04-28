@@ -21,4 +21,4 @@ sed -i "$ressourcesPattern" "src/base/tools/aapt2/ResourcesInternal.proto"
 git apply "patches/apktool_ibotpeaches.patch"
 git apply "patches/protobuf.patch"
 
-ln -sf "src/googletest" "src/boringssl/third_party/googletest"
+ln -sf "src/googletest" "src/boringssl/src/third_party/googletest"
