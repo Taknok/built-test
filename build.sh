@@ -64,7 +64,7 @@ cmake -GNinja \
   -DZLIB_USE_STATIC_LIBS=ON
   
 # Build the binary
-ninja -C build
+ninja -C build aapt2
 
 # Remove debug symbol
 "$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip" --strip-unneeded  "build/$architecture/bin/aapt2-$architecture"
