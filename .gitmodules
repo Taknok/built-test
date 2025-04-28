@@ -66,3 +66,7 @@
 	shallow = true
 	path = src/googletest
 	url = https://android.googlesource.com/platform/external/googletest
+[submodule "src/native"]
+	shallow = true
+	path = src/native
+	url = https://android.googlesource.com/platform/frameworks/native
