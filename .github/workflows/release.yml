@@ -22,7 +22,6 @@ jobs:
           # Make sure the release step uses its own credentials:
           # https://github.com/cycjimmy/semantic-release-action#private-packages
           persist-credentials: false
-          fetch-depth: 0
           submodules: 'true'
 
       - name: Setup NDK
@@ -55,7 +54,7 @@ jobs:
           name: aapt2-${{ matrix.target_arch }}
           path: ${{ github.workspace }}/build/${{ matrix.target_arch }}/bin/aapt2-*
           if-no-files-found: error
-
+          
   release:
     needs: build
     runs-on: ubuntu-latest

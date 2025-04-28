@@ -9,6 +9,9 @@ on:
 env:
   MESSAGE: Merge branch `${{ github.head_ref || github.ref_name }}` to `main`
 
+permissions:
+  pull-requests: write
+
 jobs:
   pull-request:
     name: Open pull request
@@ -18,7 +21,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Open pull request
-        uses: repo-sync/pull-request@v2
+        run: |
+          gh_pr_up() { gh pr create $* || gh pr edit $* }
+          gh_pr_up --title "chore: ${{ env.MESSAGE }}" \
+                   --body "This pull request will ${{ env.MESSAGE }}" \
+                   --base "main" \
+                   --draft
         with:
           destination_branch: 'main'
           pr_title: 'chore: ${{ env.MESSAGE }}'
