@@ -22,6 +22,7 @@
         "assets": ["CHANGELOG.md", "VERSION"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
+    ],
     [
       "@saithodev/semantic-release-backmerge",
       {
@@ -32,12 +33,12 @@
     [
       "@semantic-release/github",
       {
-          successComment: false
-          assets: [
-            {
-              "path": "artifacts/aapt2-*"
-            }
-          ]
+        successComment: false
+        assets: [
+          {
+            "path": "artifacts/aapt2-*"
+          }
+        ]
       }
     ]
   ]
