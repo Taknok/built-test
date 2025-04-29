@@ -67,4 +67,4 @@ cmake -GNinja \
 ninja -C build aapt2
 
 # Remove debug symbol
-"$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip" --strip-unneeded  "build/$architecture/bin/aapt2-$architecture"
+"$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip" --strip-unneeded  "build/bin/aapt2-$architecture"
