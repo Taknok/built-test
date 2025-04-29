@@ -1,0 +1,17 @@
+name: Workflows with secrets
+
+on: push
+
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sec
+        run: echo "$TEST_SEC - $(echo $TEST_SEC | wc -l)"
+        env:
+          TEST_SEC: ${{ secrets.TEST_SEC }}
+      - name: Var
+        run: echo "$TEST_ENV - $(echo $TEST_ENV | wc -l)"
+        env:
+          TEST_ENV: ${{ env.TEST_ENV }}
