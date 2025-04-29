@@ -33,7 +33,7 @@
     [
       "@semantic-release/github",
       {
-        successComment: false
+        successComment: false,
         assets: [
           {
             "path": "artifacts/aapt2-*"
