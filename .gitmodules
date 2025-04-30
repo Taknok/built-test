@@ -1,0 +1,72 @@
+[submodule "src/expat"]
+	shallow = true
+	path = src/expat
+	url = https://android.googlesource.com/platform/external/expat
+[submodule "src/fmtlib"]
+	shallow = true
+	path = src/fmtlib
+	url = https://android.googlesource.com/platform/external/fmtlib
+[submodule "src/boringssl"]
+	shallow = true
+	path = src/boringssl
+	url = https://android.googlesource.com/platform/external/boringssl
+[submodule "src/incremental_delivery"]
+	shallow = true
+	path = src/incremental_delivery
+	url = https://android.googlesource.com/platform/system/incremental_delivery
+[submodule "src/libbase"]
+	shallow = true
+	path = src/libbase
+	url = https://android.googlesource.com/platform/system/libbase
+[submodule "src/libpng"]
+	shallow = true
+	path = src/libpng
+	url = https://android.googlesource.com/platform/external/libpng
+[submodule "src/pcre"]
+	shallow = true
+	path = src/pcre
+	url = https://android.googlesource.com/platform/external/pcre
+[submodule "src/protobuf"]
+	shallow = true
+	path = src/protobuf
+	url = https://android.googlesource.com/platform/external/protobuf
+[submodule "src/logging"]
+	shallow = true
+	path = src/logging
+	url = https://android.googlesource.com/platform/system/logging
+[submodule "src/selinux"]
+	shallow = true
+	path = src/selinux
+	url = https://android.googlesource.com/platform/external/selinux
+[submodule "src/core"]
+	shallow = true
+	path = src/core
+	url = https://android.googlesource.com/platform/system/core
+[submodule "src/base"]
+	shallow = true
+	path = src/base
+	url = https://android.googlesource.com/platform/frameworks/base
+[submodule "src/libziparchive"]
+	shallow = true
+	path = src/libziparchive
+	url = https://android.googlesource.com/platform/system/libziparchive
+[submodule "src/soong"]
+	shallow = true
+	path = src/soong
+	url = https://android.googlesource.com/platform/build/soong
+[submodule "src/unwinding"]
+	shallow = true
+	path = src/unwinding
+	url = https://android.googlesource.com/platform/system/unwinding
+[submodule "src/jsoncpp"]
+	shallow = true
+	path = src/jsoncpp
+	url = https://android.googlesource.com/platform/external/jsoncpp
+[submodule "src/googletest"]
+	shallow = true
+	path = src/googletest
+	url = https://android.googlesource.com/platform/external/googletest
+[submodule "src/native"]
+	shallow = true
+	path = src/native
+	url = https://android.googlesource.com/platform/frameworks/native

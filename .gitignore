@@ -1,0 +1,4 @@
+bin/
+build/
+# For CI
+artifacts/
